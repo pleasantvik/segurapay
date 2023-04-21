@@ -112,7 +112,7 @@ const OurCompany = () => {
         </div>
         <div
           style={{
-            backgroundImage: `url(/asset/images/world-map-min.png) no-repeat cover`,
+            backgroundImage: `url(/asset/images/world-map-min.png)`,
           }}
           className="bg-[#1E1D1D] text-[#fff] p-4 flex flex-col items-start justify-center"
         >
