@@ -14,9 +14,6 @@ const About = () => {
       </Head>
       <div className="">
         <OurCompany />
-        <Link href="/" className="text-blue-800">
-          Back Home
-        </Link>
       </div>
     </div>
   );
