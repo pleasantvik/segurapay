@@ -35,6 +35,7 @@
     width: "100%";
     height: "100%";
   }
+
   body {
     width: "100%";
     height: "100%";
@@ -60,7 +61,7 @@
     @apply bg-[#f8f9fa] p-3 rounded-md text-sm text-gray-800 hover:ring-1 hover:ring-gray-200 focus:outline-none active:ring-gray-300 hover:shadow-md;
   } */
   .container {
-    @apply px-[10rem];
+    @apply px-[3rem] md:px-["4rem"] lg:px-["6rem"] xl:px-["8rem"];
   }
 }
 * {

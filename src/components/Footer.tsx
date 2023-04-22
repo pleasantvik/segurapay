@@ -1,18 +1,18 @@
 import React from "react";
 import Link from "next/link";
-import About from "@/pages/about";
 
 const Footer = () => {
   return (
     <section
+      className="bg-[#00093E]"
       style={{
         backgroundImage: `url(/asset/images/world-map-min.png)`,
       }}
     >
-      <div className="w-4/5 flex my-8 mx-auto">
+      <div className="container py-4 flex my-8 gap-4  justify-between flex-wrap text-white">
         <div>
-          <h6>Company</h6>
-          <ul>
+          <h6 className="mb-4 text-white">Company</h6>
+          <ul className="opacity-70">
             <li>
               <Link href="/about">About</Link>
             </li>
@@ -30,24 +30,24 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h6>Our Products</h6>
-          <ul>
+          <h6 className="mb-4">Our Products</h6>
+          <ul className="opacity-70">
             <li>
               <Link href="/">Segura Wallet</Link>
             </li>
           </ul>
         </div>
         <div>
-          <h6>Developers</h6>
-          <ul>
+          <h6 className="mb-4">Developers</h6>
+          <ul className="opacity-70">
             <li>
               <Link href="/">Documentation</Link>
             </li>
           </ul>
         </div>
         <div>
-          <h6>Legal</h6>
-          <ul>
+          <h6 className="mb-4">Legal</h6>
+          <ul className="opacity-70">
             <li>
               <Link href="/about">Privacy Policy</Link>
             </li>
@@ -63,8 +63,8 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h6>Contact Us</h6>
-          <ul>
+          <h6 className="mb-4">Contact Us</h6>
+          <ul className="opacity-70">
             <li>
               <Link href="/">
                 Kendall Square - Third Street Cambridge, MA USA

@@ -101,7 +101,7 @@ const OurCompany = () => {
           />
         </div>
       </div>
-      <div className="flex  justify-center mt-8 ">
+      <div className="flex  justify-center mt-8 container">
         <div>
           <Image
             src="/asset/images/handshake.png"
