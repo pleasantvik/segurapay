@@ -91,7 +91,7 @@ const Footer = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="grid grid-cols-5 mb-6">
+    <div className="grid grid-cols-5 mb-6">
         {footerData.map((data, index) => {
           const { title, items } = data;
           return (
@@ -111,6 +111,7 @@ const Footer = () => {
       
       {/* subscribe section */}
       <div className="flex text-white justify-between items-center my-8" >
+
         <div>
           <h3 className="font-semibold text-lg">SUBSCRIBE TO OUR NEWSLETTER</h3>
           <p className="text-lg leading-7">A monthly digest of the latest news, articles, and <br/> resources</p>
