@@ -9,7 +9,7 @@ const Footer = () => {
         backgroundImage: `url(/asset/images/world-map-min.png)`,
       }}
     >
-      <div className="container py-4 flex my-8 gap-4  justify-between flex-wrap text-white">
+      <div className="container py-4 flex mt-8 gap-4  justify-between flex-wrap text-white">
         <div>
           <h6 className="mb-4 text-white">Company</h6>
           <ul className="opacity-70">
