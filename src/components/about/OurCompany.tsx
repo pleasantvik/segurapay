@@ -1,3 +1,4 @@
+import Card, { CardImgDiv, CardTextDiv } from "@/reusable/card/Card";
 import Image from "next/image";
 import React from "react";
 
@@ -34,52 +35,23 @@ const OurCompany = () => {
         </p>
       </div>
       <div className=" bg-[#EFFBFF] mt-[20px] py-10">
-        <div className="container flex items-center justify-center flex-col gap-8 md:flex-row sm:mb-10">
-          <div className="flex flex-col items-start justify-center w-[100%]">
-            <h3 className="text-[#243AC0] uppercase pt-4">Why trust us</h3>
-            <h2 className="lg:text-5xl sm:text-2xl font-bold   mb-4">
-              Efficient and convenient payment solutions
-            </h2>
-            <p className="">
-              We are committed to innovation and constantly exploring new ways
-              to use technology to improve the financial lives of our users.
-              With a mission to make financial management accessible and easy
-              for everyone, we are poised to become a leading player in the
-              fintech industry.
-            </p>
-          </div>
-          <div className="md:w-[100%] m-auto">
-            <Image
-              src="/asset/images/payment-min.png"
-              alt="desktop"
-              height={400}
-              width={600}
-            />
-          </div>
-        </div>
-        <div className="container flex items-center justify-center flex-col gap-8 md:flex-row">
-          <div className="md:w-[100%]">
-            <Image
-              src="/asset/images/Lock-min.png"
-              alt="desktop"
-              height={400}
-              width={600}
-            />
-          </div>
-          <div className="flex flex-col items-start justify-center w-[100%]">
-            <h3 className="text-[#243AC0] uppercase pt-4">Why trust us</h3>
-            <h2 className="lg:text-5xl sm:text-2xl font-bold   mb-4">
-              Efficient and convenient payment solutions
-            </h2>
-            <p className="">
-              We are committed to innovation and constantly exploring new ways
-              to use technology to improve the financial lives of our users.
-              With a mission to make financial management accessible and easy
-              for everyone, we are poised to become a leading player in the
-              fintech industry.
-            </p>
-          </div>
-        </div>
+        <Card>
+          <CardTextDiv
+            heading="Why Trust us"
+            subHeading="Efficient and convenient payment solutions"
+            text="We are committed to innovation and constantly exploring new ways to use technology to improve the financial lives of our users With a mission to make financial management accessible and easy for everyone, we are poised to become a leading player in the fintech industry."
+          />
+          <CardImgDiv imgSrc="/asset/images/payment-min.png" />
+        </Card>
+
+        <Card>
+          <CardImgDiv imgSrc="/asset/images/Lock-min.png" />
+          <CardTextDiv
+            heading="Why Trust us"
+            subHeading="Safe and Trustworthy Payments Solution"
+            text="We are a reliable and trustworthy partner for financial institutions and businesses seeking innovative payment solutions"
+          />
+        </Card>
       </div>
 
       <div className="container  mt-20 flex flex-col items-center justify-center ">
