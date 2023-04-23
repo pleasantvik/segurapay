@@ -1,6 +1,9 @@
-import Card, { CardImgDiv, CardTextDiv } from "@/reusable/card/Card";
+// import Card, { CardImgDiv, CardTextDiv } from "@components/reusable/card/Card";
 import Image from "next/image";
 import React from "react";
+import Card from "../reusable/card/Card";
+import { CardTextDiv } from "@/components/reusable/card/CardTextDiv";
+import { CardImgDiv } from "@/components/reusable/card/CardImgDiv";
 
 const OurCompany = () => {
   return (
@@ -56,7 +59,9 @@ const OurCompany = () => {
 
       <div className="container  mt-20 flex flex-col items-center justify-center ">
         <h3 className="text-[#243AC0]">Our Season</h3>
-        <h2 className="text-[#1E1D1D] text-5xl">Season Financial Expert</h2>
+        <h2 className="text-[#1E1D1D] font-bold sm:text-2xl lg:text-5xl">
+          Season Financial Expert
+        </h2>
         <p className="text-center">
           Our team is made up of seasoned financial experts and technology
           innovators who have come together to create a platform that is easy to
