@@ -1,13 +1,14 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface InnerFooter {
-  name: string,
-  pathUrl?: string
+  name: string;
+  pathUrl?: string;
 }
 interface Ifooter {
-  title: string,
-  items: InnerFooter[]
+  title: string;
+  items: InnerFooter[];
 }
 
 const footerData: Ifooter[] = [
@@ -83,53 +84,75 @@ const footerData: Ifooter[] = [
 
 const Footer = () => {
   return (
-    <section
-      className="bg-[#00093E] h-[592px] px-[101px] py-[62.17px]"
-      style={{
-        backgroundImage: `url(/asset/images/WorldMap.svg)`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
-    <div className="grid grid-cols-5 mb-6">
-        {footerData.map((data, index) => {
-          const { title, items } = data;
-          return (
-            <div key={`${data}-${index}`}>
-              <h4 className="text-white font-bold mb-4 text-lg">{title}</h4>
-              <ul className="">
-                {items.map((el, index) => {
-                  const {name, pathUrl} = el
-                  return <li className="text-white mb-2" key={index}>{name}</li>
-                })}
-              </ul>
-            </div>
-          );
-        })}
-      </div>
-      <hr />
-      
-      {/* subscribe section */}
-      <div className="flex text-white justify-between items-center my-8" >
-
-        <div>
-          <h3 className="font-semibold text-lg">SUBSCRIBE TO OUR NEWSLETTER</h3>
-          <p className="text-lg leading-7">A monthly digest of the latest news, articles, and <br/> resources</p>
+    <div className="bg-[#00093E]">
+      <section
+        className="container py-5"
+        style={{
+          backgroundImage: `url(/asset/images/WorldMap.svg)`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mb-6">
+          {footerData.map((data, index) => {
+            const { title, items } = data;
+            return (
+              <div key={`${data}-${index}`}>
+                <h4 className="text-white font-bold mb-4 text-lg">{title}</h4>
+                <ul className="">
+                  {items.map((el, index) => {
+                    const { name, pathUrl } = el;
+                    return (
+                      <li className="text-white mb-2" key={index}>
+                        {name}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            );
+          })}
         </div>
-        <form action="">
-          <input type="email" placeholder="Enter your email" className="bg-[#C7C7C7] w-[384px] h-[59px] rounded-lg py-2 px-4 text-[#525252] text-base"/>
-          <button type="submit" className="w-48 bg-[#243AC0] text-white rounded-lg h-[54px] ml-4">Subscribe</button>
-        </form>
-      </div>
+        <hr />
 
-      <hr className="my-10"/>
+        {/* subscribe section */}
+        <div className="flex flex-col md:flex-row text-white justify-between items-center my-8">
+          <div className="w-[100%]">
+            <h3 className="font-semibold text-lg">
+              SUBSCRIBE TO OUR NEWSLETTER
+            </h3>
+            <p className="text-lg leading-7">
+              A monthly digest of the latest news, articles, and <br />{" "}
+              resources
+            </p>
+          </div>
+          <form className="flex flex-col gap-4 w-[100%]">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="bg-[#C7C7C7] w-[100%] rounded-lg py-2 px-4 text-[#525252] text-base"
+            />
+            <button
+              type="submit"
+              className=" bg-[#243AC0] text-white rounded-lg h-[54px]"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
 
-      {/* footer bottom */}
-      <div className="flex justify-between items-center text-white">
-        <img src="/asset/images/Logo.svg" alt="" />
-        <div>&copy; {new Date().getFullYear()} SeguraPay. All right reserved</div>
-      </div>
-    </section>
+        <hr className="my-10" />
+
+        {/* footer bottom */}
+        <div className="flex flex-col md:flex-row justify-between items-center text-white">
+          <Image src="/asset/images/Logo.svg" alt="" height={150} width={150} />
+
+          <div>
+            &copy; {new Date().getFullYear()} SeguraPay. All right reserved
+          </div>
+        </div>
+      </section>
+    </div>
   );
 };
 

@@ -78,7 +78,7 @@ const OurCompany = () => {
           />
         </div>
       </div>
-      <div className="flex  justify-center mt-8 container mb-[-5rem] -z-10 relative">
+      <div className="flex  justify-center mt-8 container md:mb-[-2rem] -z-10 relative">
         <div className="">
           <Image
             src="/asset/images/handshake.png"
