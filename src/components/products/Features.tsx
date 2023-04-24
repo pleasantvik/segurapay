@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Features = () => {
   return (
@@ -6,7 +7,12 @@ const Features = () => {
       {/* feature one */}
       <div className="section-layout mb-10 lg:mb-0">
         <div className="order-2 lg:order-1 flex justify-center">
-          <img src="/asset/images/FundWallet.svg" alt="fund wallet" />
+          <Image
+            src="/asset/images/FundWallet.svg"
+            height={400}
+            width={800}
+            alt="fund wallet"
+          />
         </div>
         <div className="order-1 lg:order-2">
           <span className="section-name">FEATURES</span>
@@ -40,7 +46,7 @@ const Features = () => {
           </p>
         </div>
         <div className="flex justify-center">
-          <img src="/asset/images/Segurawallet2.svg" alt="" />
+            <Image src='/asset/images/Segurawallet2.svg' height={400} width={800} alt='Segura wallet'/>
         </div>
       </div>
     </div>

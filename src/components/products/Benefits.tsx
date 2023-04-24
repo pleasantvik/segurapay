@@ -1,5 +1,6 @@
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
+import Image from "next/image";
 
 interface IBenefit {
   title: string;
@@ -41,15 +42,23 @@ const Benefits = () => {
 
       <div className="section-layout px-10 lg:pl-[108px] lg:pr-[100px] pb-[128px]">
         <div className="flex justify-center">
-          <img src="asset/images/FundWallet.svg" alt="fund wallet" />
+          <Image
+            src="/asset/images/FundWallet.svg"
+            height={400}
+            width={800}
+            alt="Fund Wallet"
+          />
         </div>
         <div className="">
           {BenefitsData.map((data, index) => {
             const { title, description, icon } = data;
             return (
-              <div className="flex flex-col items-center lg:flex-row lg:items-start mb-2" key={title}>
+              <div
+                className="flex flex-col items-center lg:flex-row lg:items-start mb-2"
+                key={title}
+              >
                 <div className="">
-                  <img src={icon} alt={title} className=''/>
+                  <img src={icon} alt={title} className="" />
                 </div>
                 <div className="text-center lg:text-left">
                   <h4 className="font-bold mb-[10px]">{title}</h4>
@@ -84,7 +93,13 @@ const Benefits = () => {
           </div>
         </div>
         <div className="md:h-full bg-gradient-to-br from-[#54D9EE] to-[#243AC0] relative">
-            <img src="/asset/images/codePicture.svg" alt="code picture" className="lg:absolute lg:bottom-0 lg:left-[50%] ml-[50%] lg:ml-0 -translate-x-1/2"/>
+          <Image
+            src="/asset/images/codePicture.svg"
+            height={581}
+            width={561}
+            alt="code picture"
+            className="lg:absolute lg:bottom-0 lg:left-[50%] ml-[50%] lg:ml-0 -translate-x-1/2"
+          />
         </div>
       </div>
     </div>
