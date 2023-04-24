@@ -2,13 +2,13 @@ import React from "react";
 
 const Features = () => {
   return (
-    <div className="h-[1237px] bg-[#EFFBFF] px-[103px] pt-[131px] pb-[101px]">
+    <div className="bg-[#EFFBFF] px-10 lg:px-[103px] nxl:pt-[131px] pt-20 pb-10 nxl:pb-[101px]">
       {/* feature one */}
-      <div className="grid grid-cols-2 items-center">
-        <div>
+      <div className="section-layout mb-10 lg:mb-0">
+        <div className="order-2 lg:order-1 flex justify-center">
           <img src="/asset/images/FundWallet.svg" alt="fund wallet" />
         </div>
-        <div>
+        <div className="order-1 lg:order-2">
           <span className="section-name">FEATURES</span>
           <h3 className="section-title">Wallet Management</h3>
           <p className="section-description">
@@ -32,14 +32,14 @@ const Features = () => {
             history, and other relevant information.
           </p>
 
-          <p className="section-description">
+          <p className="section-description mb-10 lg:mb-0">
             Security: SeguraWallet employs high-level security measures to
             ensure the safety of its clients and customers' funds. The service
             uses advanced encryption and secure storage methods to protect
             sensitive data
           </p>
         </div>
-        <div>
+        <div className="flex justify-center">
           <img src="/asset/images/Segurawallet2.svg" alt="" />
         </div>
       </div>

@@ -63,6 +63,19 @@
   .container {
     @apply px-[3rem] md:px-["4rem"] lg:px-["6rem"] xl:px-["8rem"] mx-auto;
   }
+
+  .section-name{
+    @apply text-[#243AC0] text-base mb-[10px]
+  }
+  .section-layout {
+    @apply grid grid-cols-1 lg:grid-cols-2 items-center gap-4;
+  }
+  .section-title{
+    @apply text-2xl md:text-3xl 2xl:text-5xl text-[#1E1D1D] mb-6 font-semibold;
+  }
+  .section-description{
+    @apply xl:w-[493px] leading-7 text-[#525252];
+  }
 }
 * {
   margin: 0;

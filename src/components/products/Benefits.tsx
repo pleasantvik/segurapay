@@ -30,38 +30,38 @@ const BenefitsData: IBenefit[] = [
 
 const Benefits = () => {
   return (
-    <div className="h-[1620px] pt-[148px]">
+    <div className="pt-10 nxl:pt-[165px]">
       {/* section header */}
       <div className="text-center mb-[60px]">
         <span className="section-name">BENEFIT</span>
-        <h3 className="section-title leading-[60px]">
-          SeguraWallet offers several benefits <br /> for clients
+        <h3 className="section-title px-10 lg:leading-[60px] lg:w-[835px] lg:ml-[50%] lg:-translate-x-1/2">
+          SeguraWallet offers several benefits for clients
         </h3>
       </div>
 
-      <div className="section-layout pl-[108px] pr-[100px] pb-[128px]">
-        <div>
+      <div className="section-layout px-10 lg:pl-[108px] lg:pr-[100px] pb-[128px]">
+        <div className="flex justify-center">
           <img src="asset/images/FundWallet.svg" alt="fund wallet" />
         </div>
         <div className="">
           {BenefitsData.map((data, index) => {
             const { title, description, icon } = data;
             return (
-              <div className="flex items-start mb-2" key={title}>
-                <div className="-mt-7">
-                  <img src={icon} alt={title} />
-                </div>
+              <div className="flex flex-col items-center lg:flex-row lg:items-start mb-2" key={title}>
                 <div className="">
-                  <h4 className="font-bold text-2xl mb-[10px]">{title}</h4>
-                  <p className="section-description w-[423px]">{description}</p>
+                  <img src={icon} alt={title} className=''/>
+                </div>
+                <div className="text-center lg:text-left">
+                  <h4 className="font-bold mb-[10px]">{title}</h4>
+                  <p className="lg:w-[423px]">{description}</p>
                 </div>
               </div>
             );
           })}
         </div>
       </div>
-      <div className="h-[676px] bg-[#EFFBFF] grid grid-cols-2">
-        <div className="h-full pt-[95px] pb-[108px] pl-[105px] pr-[122px]">
+      <div className=" bg-[#EFFBFF] section-layout">
+        <div className="h-full pt-[95px] pb-[108px] pl-10 md:pl-[105px] pr-10 nxl:pr-[122px]">
           <h3 className="section-title">
             Easy Integration & <br /> Secure Transactions
           </h3>
@@ -83,8 +83,8 @@ const Benefits = () => {
             </button>
           </div>
         </div>
-        <div className="bg-[#54D9EE] relative">
-            <img src="/asset/images/codePicture.svg" alt="code picture" className="absolute bottom-0 left-[50%] -translate-x-1/2"/>
+        <div className="md:h-full bg-gradient-to-br from-[#54D9EE] to-[#243AC0] relative">
+            <img src="/asset/images/codePicture.svg" alt="code picture" className="lg:absolute lg:bottom-0 lg:left-[50%] ml-[50%] lg:ml-0 -translate-x-1/2"/>
         </div>
       </div>
     </div>
