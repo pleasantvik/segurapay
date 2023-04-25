@@ -76,15 +76,15 @@ const Benefits = () => {
           </h3>
           <p className="section-description mb-4">
             SeguraWallet provides an easy-to-use API that can be integrated into
-            a client's system. This allows clients to seamlessly manage their
-            customers' transactions from their own platform.
+            a client&apos;s system. This allows clients to seamlessly manage
+            their customers transactions from their own platform.
           </p>
 
           <p className="section-description mb-6">
-            Our API is easy to integrate into a client's system, allowing them
-            to manage their customers' transactions from their own platform.
-            SeguraWallet also employs advanced security measures to ensure the
-            safety of its clients and customers' funds.
+            Our API is easy to integrate into a client&apos;s system, allowing
+            them to manage their customers&apos; transactions from their own
+            platform. SeguraWallet also employs advanced security measures to
+            ensure the safety of its clients and customers&apos; funds.
           </p>
           <div className="bg-gradient-to-r from-[#54D9EE] to-[#243AC0] rounded-lg p-[2px] w-[250px]">
             <button className="bg-[#EFFBFF] py-4 px-6 rounded-lg flex items-center gap-2 text-[#243AC0] font-medium">

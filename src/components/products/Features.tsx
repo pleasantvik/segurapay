@@ -18,7 +18,7 @@ const Features = () => {
           <span className="section-name">FEATURES</span>
           <h3 className="section-title">Wallet Management</h3>
           <p className="section-description">
-            SeguraWallet allows clients to manage their customers' wallet
+            SeguraWallet allows clients to manage their customers&apos; wallet
             balances and transactions. This includes adding funds to their
             wallets, deducting funds for purchases, and viewing their
             transaction history.
@@ -40,13 +40,18 @@ const Features = () => {
 
           <p className="section-description mb-10 lg:mb-0">
             Security: SeguraWallet employs high-level security measures to
-            ensure the safety of its clients and customers' funds. The service
-            uses advanced encryption and secure storage methods to protect
-            sensitive data
+            ensure the safety of its clients and customers&apos; funds. The
+            service uses advanced encryption and secure storage methods to
+            protect sensitive data
           </p>
         </div>
         <div className="flex justify-center">
-            <Image src='/asset/images/Segurawallet2.svg' height={400} width={800} alt='Segura wallet'/>
+          <Image
+            src="/asset/images/Segurawallet2.svg"
+            height={400}
+            width={800}
+            alt="Segura wallet"
+          />
         </div>
       </div>
     </div>
