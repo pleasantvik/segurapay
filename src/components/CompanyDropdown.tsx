@@ -37,7 +37,7 @@ const CompanyDropdown = (props: IDropdownOptions) => {
   const { onAction, position } = props;
 
   return (
-    <div className={`absolute top-20 left-[${position}px] w-[677px] h-[406px] bg-white rounded-br-lg rounded-bl-lg z-10 text-black p-8`}>
+    <div className={`absolute top-20 left-[${position}px] max-w-[677px] h-[406px] bg-white rounded-br-lg rounded-bl-lg z-10 text-black p-8 hidden md:block`}>
       <div className="grid grid-cols-2 gap-16 text-sm text-[#243AC0] mb-[14px]">
         <p>COMPANY</p>
         <p>
