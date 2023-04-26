@@ -9,6 +9,8 @@ const Navbar = () => {
   const [location, setLocation] = useState<number | null>(0);
   const subMenuPosition = useRef(null);
 
+  const [mobileNav, setMobileNav] = useState(false);
+
   // useEffect(() => {
   //   const item: JsxElement | null = subMenuPosition.current;
   //   const position = item?.getBoundingClientRect();
@@ -21,11 +23,11 @@ const Navbar = () => {
 
   return (
     <div className=" bg-[#00093E]">
-      <div className=" flex justify-between gap-5 md:gap-10  text-white items-center container  flex-col md:flex-row py-5">
+      <div className=" flex justify-between gap-5 md:gap-10  text-white items-center container mx-auto px-4 flex-col md:flex-row py-5">
         <div>
           <Image src="/asset/images/Logo.svg" alt="" height={150} width={150} />
         </div>
-        <nav>
+        <nav className="">
           <ul className="flex gap-5 md:gap-10 flex-col md:flex-row items-center">
             <li
               className="flex items-center gap-1 cursor-pointer"
@@ -45,7 +47,7 @@ const Navbar = () => {
           </ul>
         </nav>
         <div className="bg-gradient-to-r from-[#54D9EE] to-[#243AC0] rounded-lg p-[2px]">
-          <button className="bg-[#00093E] py-4 px-6 rounded-lg whitespace-nowrap">
+          <button className="bg-[#00093E] py-4 px-6 rounded-lg whitespace-nowrap ">
             Get Started
           </button>
         </div>

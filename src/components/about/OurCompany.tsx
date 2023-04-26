@@ -14,21 +14,21 @@ const OurCompany = () => {
           <span>Reliable and trustworthy partner</span>
           <span> for financial institutions</span>
         </h1>
-        <p className="container text-center  text-[#525252] ">
+        <p className="container mx-auto px-4 text-center  text-[#525252] ">
           SeguraPay is a product-driven company that is focused on solving
           financial/ payment problems. The company currently offers two
           products, SeguraPay and SeguraWallet, which are designed to provide
           secure, convenient, and efficient payment solutions.
         </p>
       </section>
-      <div className="container flex justify-center items-center sm:mt-[-5rem]  md:mt-[-10rem] px-6 relative flex-col">
+      <div className="container mx-auto px-4 flex justify-center items-center sm:mt-[-5rem]  md:mt-[-10rem]  relative flex-col">
         <Image
           src="/asset/images/desktop.png"
           alt="desktop"
           height={400}
           width={800}
         />
-        <p className="container text-[14px] sm:text-[20px]    mt-4 flex items-center justify-center">
+        <p className="container mx-auto sm:px-4 text-[14px] sm:text-[20px]    mt-4 flex items-center justify-center">
           We are a cutting-edge financial technology company that is
           revolutionizing the way people manage their money. Founded in 2022,
           SeguraPay is dedicated to using technology to empower individuals and
@@ -57,7 +57,7 @@ const OurCompany = () => {
         </Card>
       </div>
 
-      <div className="container  mt-20 flex flex-col items-center justify-center ">
+      <div className="container mx-auto px-4  mt-20 flex flex-col items-center justify-center ">
         <h3 className="text-[#243AC0]">Our Season</h3>
         <h2 className="text-[#1E1D1D] font-bold sm:text-2xl lg:text-5xl">
           Season Financial Expert
@@ -78,7 +78,7 @@ const OurCompany = () => {
           />
         </div>
       </div>
-      <div className="flex  justify-center mt-8 container md:mb-[-2rem] -z-10 relative">
+      <div className="flex  justify-center mt-8 container mx-auto px-4 md:mb-[-2rem] -z-10 relative">
         <div className="">
           <Image
             src="/asset/images/handshake.png"

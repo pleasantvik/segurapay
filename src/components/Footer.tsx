@@ -86,7 +86,7 @@ const Footer = () => {
   return (
     <div className="bg-[#00093E]">
       <section
-        className="container py-5"
+        className="container mx-auto px-4 py-5"
         style={{
           backgroundImage: `url(/asset/images/WorldMap.svg)`,
           backgroundRepeat: "no-repeat",
