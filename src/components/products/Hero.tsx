@@ -15,11 +15,11 @@ const Hero = () => {
             className="absolute top-0 left-0 -z-10"
           />
           <div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:7xl font-semibold mb-5 text-[#1E1D1D] xl:w-[511px]">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl xl:7xl font-semibold mb-5 text-[#1E1D1D] xl:w-[511px] text-center md:text-left">
               <span className="text-[#7B8CF5]">Easy & Secure Solution</span> for
               Businesses
             </h2>
-            <p className="text-2xl mb-10 leading-8 nxl:w-[542px]">
+            <p className="text-[18px]  mb-10 leading-8 ">
               Easy and secure way to manage transactions from your Business and
               Personal platform.
             </p>
