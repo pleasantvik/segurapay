@@ -10,7 +10,7 @@ const OurCompany = () => {
     <div>
       <section className="flex bg-[#EFFBFF] flex-col justify-start  items-center relative  sm:h-[300px] md:h-[400px] pt-8">
         <h2 className="text-[#243AC0]">Our Company</h2>
-        <h1 className="text-[#1E1D1D] font-semibold text-[2rem] text-center flex flex-col ">
+        <h1 className="text-[#1E1D1D] font-semibold lg:text-[2rem] text-center flex flex-col sm:text-[1.5rem] leading-tight">
           <span>Reliable and trustworthy partner</span>
           <span> for financial institutions</span>
         </h1>
