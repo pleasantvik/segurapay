@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <div className=" bg-[#00093E]">
-      <div className=" flex justify-between gap-5 md:gap-10  text-white items-center container  flex-col md:flex-row py-5">
+      <div className=" flex justify-between gap-5 md:gap-10  text-white items-center container mx-auto  flex-col md:flex-row py-5">
         <div>
           <Image src="/asset/images/Logo.svg" alt="" height={150} width={150} />
         </div>

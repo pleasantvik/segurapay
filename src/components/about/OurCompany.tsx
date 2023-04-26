@@ -14,7 +14,7 @@ const OurCompany = () => {
           <span>Reliable and trustworthy partner</span>
           <span> for financial institutions</span>
         </h1>
-        <p className="container text-center  text-[#525252] ">
+        <p className="container mx-auto text-center  text-[#525252] ">
           SeguraPay is a product-driven company that is focused on solving
           financial/ payment problems. The company currently offers two
           products, SeguraPay and SeguraWallet, which are designed to provide
