@@ -84,15 +84,15 @@ const footerData: Ifooter[] = [
 
 const Footer = () => {
   return (
-    <div className="bg-[#00093E]">
-      <section
-        className="container mx-auto px-4 py-5"
-        style={{
-          backgroundImage: `url(/asset/images/WorldMap.svg)`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-      >
+    <div
+      className="bg-[#00093E]"
+      style={{
+        backgroundImage: `url(/asset/images/WorldMap.svg)`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
+      <section className="container mx-auto px-4 py-5">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mb-6">
           {footerData.map((data, index) => {
             const { title, items } = data;

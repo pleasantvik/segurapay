@@ -1,6 +1,8 @@
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import Image from "next/image";
+import Card from "../reusable/card/Card";
+import { CardImgDiv } from "../reusable/card/CardImgDiv";
 
 interface IBenefit {
   title: string;
@@ -31,75 +33,78 @@ const BenefitsData: IBenefit[] = [
 
 const Benefits = () => {
   return (
-    <div className="pt-10 nxl:pt-[165px]">
-      {/* section header */}
-      <div className="text-center mb-[60px]">
-        <span className="section-name">BENEFIT</span>
-        <h3 className="section-title px-10 lg:leading-[60px] lg:w-[835px] lg:ml-[50%] lg:-translate-x-1/2">
-          SeguraWallet offers several benefits for clients
-        </h3>
-      </div>
-
-      <div className="section-layout px-10 lg:pl-[108px] lg:pr-[100px] pb-[128px]">
-        <div className="flex justify-center">
-          <Image
-            src="/asset/images/FundWallet.svg"
-            height={400}
-            width={800}
-            alt="Fund Wallet"
-          />
-        </div>
-        <div className="">
-          {BenefitsData.map((data, index) => {
-            const { title, description, icon } = data;
-            return (
-              <div
-                className="flex flex-col items-center lg:flex-row lg:items-start mb-2"
-                key={title}
-              >
-                <div className="">
-                  <img src={icon} alt={title} className="" />
-                </div>
-                <div className="text-center lg:text-left">
-                  <h4 className="font-bold mb-[10px]">{title}</h4>
-                  <p className="lg:w-[423px]">{description}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-      <div className=" bg-[#EFFBFF] section-layout">
-        <div className="h-full pt-[95px] pb-[108px] pl-10 md:pl-[105px] pr-10 nxl:pr-[122px]">
-          <h3 className="section-title">
-            Easy Integration & <br /> Secure Transactions
+    <div>
+      <div className="container mx-auto px-4">
+        {/* section header */}
+        <div className="text-center mb-[60px] pt-[4rem]">
+          <span className="text-[#243AC0]">BENEFIT</span>
+          <h3 className="text-[#1E1E1D] font-semibold text-2xl md:text-3xl lg:text-4xl leading-[1.5rem]">
+            SeguraWallet offers several benefits for clients
           </h3>
-          <p className="section-description mb-4">
-            SeguraWallet provides an easy-to-use API that can be integrated into
-            a client&apos;s system. This allows clients to seamlessly manage
-            their customers transactions from their own platform.
-          </p>
+        </div>
 
-          <p className="section-description mb-6">
-            Our API is easy to integrate into a client&apos;s system, allowing
-            them to manage their customers&apos; transactions from their own
-            platform. SeguraWallet also employs advanced security measures to
-            ensure the safety of its clients and customers&apos; funds.
-          </p>
-          <div className="bg-gradient-to-r from-[#54D9EE] to-[#243AC0] rounded-lg p-[2px] w-[250px]">
-            <button className="bg-[#EFFBFF] py-4 px-6 rounded-lg flex items-center gap-2 text-[#243AC0] font-medium">
+        <div>
+          <Card>
+            <CardImgDiv imgSrc="/asset/images/FundWallet.svg" />
+            <div className="w-[100%]">
+              {BenefitsData.map((data, index) => {
+                const { title, description, icon } = data;
+                return (
+                  <div
+                    className="flex flex-col items-start justify-start  md:flex-row md:justify-start md:items-start mb-8"
+                    key={title}
+                  >
+                    <div className="">
+                      <Image
+                        src={icon}
+                        alt={title}
+                        className=""
+                        width={100}
+                        height={100}
+                      />
+                    </div>
+                    <div className="flex flex-col justify-start">
+                      <h4 className="font-bold">{title}</h4>
+                      <p className="lg:w-[423px]">{description}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </Card>
+        </div>
+      </div>
+      <div className="bg-[#EFFBFF]">
+        <div className="container mx-auto  section-layout">
+          <div className="h-full pt-[95px] pb-[108px] px-10 flex flex-col items-start">
+            <h3 className="section-title">
+              Easy Integration & <br /> Secure Transactions
+            </h3>
+            <p className="section-description mb-4">
+              SeguraWallet provides an easy-to-use API that can be integrated
+              into a client&apos;s system. This allows clients to seamlessly
+              manage their customers transactions from their own platform.
+            </p>
+
+            <p className="section-description mb-6">
+              Our API is easy to integrate into a client&apos;s system, allowing
+              them to manage their customers&apos; transactions from their own
+              platform. SeguraWallet also employs advanced security measures to
+              ensure the safety of its clients and customers&apos; funds.
+            </p>
+            <button className="bg-[#EFFBFF] border border-[#54D9EE] py-4 px-6 rounded-lg flex items-center gap-2 text-[#243AC0] font-medium">
               Explore Documentation <BsArrowUpRight />
             </button>
           </div>
-        </div>
-        <div className="md:h-full bg-gradient-to-br from-[#54D9EE] to-[#243AC0] relative">
-          <Image
-            src="/asset/images/codePicture.svg"
-            height={581}
-            width={561}
-            alt="code picture"
-            className="lg:absolute lg:bottom-0 lg:left-[50%] ml-[50%] lg:ml-0 -translate-x-1/2"
-          />
+          <div className="h-full bg-gradient-to-br from-[#54D9EE] to-[#243AC0] relative hidden lg:block">
+            <Image
+              src="/asset/images/codePicture.svg"
+              height={581}
+              width={561}
+              alt="code picture"
+              className="lg:absolute lg:bottom-0 lg:left-[50%] ml-[50%] lg:ml-0 -translate-x-1/2 "
+            />
+          </div>
         </div>
       </div>
     </div>

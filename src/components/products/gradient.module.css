@@ -1,0 +1,9 @@
+.grad {
+  background-image: linear-gradient(
+    90deg,
+    #effbff 0%,
+    #effbff 50%,
+    #54d9ee 50%,
+    #54d9ee 100%
+  );
+}
