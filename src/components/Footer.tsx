@@ -103,7 +103,10 @@ const Footer = () => {
                   {items.map((el, index) => {
                     const { name, pathUrl } = el;
                     return (
-                      <li className="text-white mb-2" key={index}>
+                      <li
+                        className="text-white text-opacity-60 mb-2"
+                        key={index}
+                      >
                         {name}
                       </li>
                     );
@@ -121,7 +124,7 @@ const Footer = () => {
             <h3 className="font-semibold text-lg">
               SUBSCRIBE TO OUR NEWSLETTER
             </h3>
-            <p className="text-lg leading-7">
+            <p className="text-lg leading-7 text-white text-opacity-60">
               A monthly digest of the latest news, articles, and <br />{" "}
               resources
             </p>
@@ -147,7 +150,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center text-white">
           <Image src="/asset/images/Logo.svg" alt="" height={150} width={150} />
 
-          <div>
+          <div className="text-white text-opacity-60">
             &copy; {new Date().getFullYear()} SeguraPay. All right reserved
           </div>
         </div>
