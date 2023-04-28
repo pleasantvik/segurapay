@@ -1,0 +1,22 @@
+{
+  "career": [
+    {
+      "id": "job-1",
+      "title": "Software Developer",
+      "location": "Remote",
+      "details": "SeguraPay is a product-driven company that is focused on solving financial/ payment problems. The company currently offers two products, SeguraPay and SeguraWallet, which are designed to provide secure, convenient, and efficient payment solutions."
+    },
+    {
+      "id": "job-2",
+      "title": "Android developer",
+      "location": "Remote",
+      "details": "We are a cutting-edge financial technology company that is revolutionizing the way people manage their money. Founded in 2022, SeguraPay is dedicated to using technology to empower individuals and businesses to make better financial decisions and achieve their financial goals. Reliable and trustworthy partner for financial institutions and businesses seeking innovative payment solutions."
+    },
+    {
+      "id": "job-3",
+      "title": "Product Manager",
+      "location": "Remote",
+      "details": "We are a cutting-edge financial technology company that is revolutionizing the way people manage their money. Founded in 2022, SeguraPay is dedicated to using technology to empower individuals and businesses to make better financial decisions and achieve their financial goals. Reliable and trustworthy partner for financial institutions and businesses seeking innovative payment solutions."
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 import Layout from "@/components/Layout";
 import Head from "next/head";
+import HomePage from "@/components/home/HomePage";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +16,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex items-center h-[100vh] justify-center flex-col">
-        <h1>Welcome</h1>
+      <main>
+        <HomePage />
         <Link href="/about" className="text-blue-800">
           Go to about page
         </Link>
