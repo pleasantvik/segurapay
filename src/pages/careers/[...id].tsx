@@ -5,7 +5,6 @@ import React from "react";
 import { getJob } from "../../../lib/getJob";
 
 const Jobs = ({ jobOpening }: any) => {
-  console.log({ jobOpening });
   return (
     <Layout>
       <Head>
@@ -21,7 +20,7 @@ const Jobs = ({ jobOpening }: any) => {
 
 export const getStaticPaths = async () => {
   const careers = await getJob();
-  const paths = careers.map((career) => {
+  const paths = careers?.map((career) => {
     return {
       params: {
         id: [career.id],
@@ -38,7 +37,7 @@ export const getStaticProps = async (staticProps: any) => {
   const params = staticProps.params;
   const careers = await getJob();
 
-  const findJobById = careers.find((career) => career?.id === params?.id[0]);
+  const findJobById = careers?.find((career) => career?.id === params.id[0]);
 
   return {
     props: {
