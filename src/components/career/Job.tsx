@@ -6,7 +6,7 @@ const Job = ({ jobOpening }: any) => {
       <header className="bg-[#EFFBFF]">
         <div className="container px-4 mx-auto text-center py-8">
           <h2 className="text-[#243AC0]">Careers</h2>
-          <h1 className="text-[#1E1D1D] font-semibold">{jobOpening.title}</h1>
+          <h1 className="text-[#1E1D1D] font-semibold">{jobOpening?.title}</h1>
         </div>
       </header>
       <section className="container mx-auto px-4 py-4 grid grid-cols-1 md:grid-cols-2">
