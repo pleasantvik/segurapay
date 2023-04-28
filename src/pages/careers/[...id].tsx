@@ -38,7 +38,7 @@ export const getStaticProps = async (staticProps: any) => {
   const params = staticProps.params;
   const careers = await getJob();
 
-  const findJobById = careers.find((career) => career.id === params?.id[0]);
+  const findJobById = careers.find((career) => career?.id === params?.id[0]);
 
   return {
     props: {
