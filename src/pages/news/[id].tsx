@@ -53,7 +53,7 @@ const SpecificNews = () => {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/asset/images/Logo.svg" />
         </Head>
-        <div className="text-center pt-[85px] px-[10%]" style={{backgroundImage: 'url(/asset/images/newsDetailsHead.svg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+        <div className="text-center pt-[85px] px-[10%]" style={{backgroundImage: 'url(/asset/images/rectangle.svg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
           <span className="py-1 px-2 bg-[#F1F3FE] rounded-md text-[#243AC0]">
             PUBLICATION
           </span>
