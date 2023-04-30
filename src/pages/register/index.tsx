@@ -1,5 +1,5 @@
-import { ResetPasswordForm } from "@/components/auth/ResetPasswordForm";
-import { RegisterForm } from "@/components/auth/registerForm";
+// import { RegisterForm } from "@/components/auth/registerForm";
+import { RegisterForm } from "@/components/auth/RegisterForm";
 import React from "react";
 
 const Register = () => {
