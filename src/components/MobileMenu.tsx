@@ -65,7 +65,7 @@ const MobileMenu = (props: IMenu) => {
       } p-10 md:hidden z-10 `}
     >
       <RxCross2
-        className="text-2xl absolute top-4 right-6 cursor-pointer font-bold"
+        className="text-2xl text-black absolute top-4 right-6 cursor-pointer font-bold"
         onClick={onClose}
       />
       <div className="mt-8">
