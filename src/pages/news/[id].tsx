@@ -43,7 +43,7 @@ const socialMediaIcons: string[] = [
 
 const SpecificNews = () => {
   const [newsNext, setNewsNext] = useState<number>(0);
-//   console.log(newsNext)
+  //   console.log(newsNext)
   return (
     <>
       <Layout>
@@ -53,7 +53,14 @@ const SpecificNews = () => {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/asset/images/Logo.svg" />
         </Head>
-        <div className="text-center pt-[85px] px-[10%]" style={{backgroundImage: 'url(/asset/images/rectangle.svg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+        <div
+          className="text-center pt-[85px] px-[10%]"
+          style={{
+            backgroundImage: "url(/asset/images/rectangle.svg)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        >
           <span className="py-1 px-2 bg-[#F1F3FE] rounded-md text-[#243AC0]">
             PUBLICATION
           </span>
@@ -108,13 +115,12 @@ const SpecificNews = () => {
             <div className="flex gap-[12px]">
               {socialMediaIcons.map((icon, index) => {
                 return (
-                  <Link href="#">
+                  <Link href="#" key={`icon-${index}`}>
                     <Image
                       src={`/asset/icons/${icon}`}
                       height={24}
                       width={24}
                       alt={icon}
-                      key={index}
                     />
                   </Link>
                 );
@@ -125,7 +131,11 @@ const SpecificNews = () => {
         </div>
         <div className="px-[10%]">
           <hr className="mb-8" />
-          <NextRightPagination newsNext={newsNext} setNewsNext={setNewsNext} newsData={newsData}/>
+          <NextRightPagination
+            newsNext={newsNext}
+            setNewsNext={setNewsNext}
+            newsData={newsData}
+          />
         </div>
       </Layout>
     </>
